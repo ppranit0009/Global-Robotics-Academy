@@ -38,7 +38,7 @@ const Pathway = () => {
               <div className="connector"></div>
               <div className="node"></div>
               <div className="card">
-                <h2 style={{ fontSize: 'var(--font-size-sm)', fontWeight: '700', lineHeight: '1.3', color: '#12181c' }}>{milestone.title}</h2>
+                <h2 style={{ fontSize: 'var(--font-size-2xl)', fontWeight: '700', lineHeight: '1.3', color: '#12181c' }}>{milestone.number}. {milestone.title}</h2>
                 <p style={{ fontSize: 'var(--font-size-sm)', lineHeight: '1.4', color: '#5a6067' }}>{milestone.description}</p>
               </div>
             </div>
