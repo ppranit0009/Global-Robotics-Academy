@@ -104,27 +104,24 @@ const Programs = () => {
   return (
     <div className="page">
       {/* Hero Section */}
-      <section className="programs-hero" data-section="hero">
-        <div className="wrap">
-          <div className={`programs-hero-content ${visibleSections.has('hero') ? 'visible' : ''}`}>
-            <p className="eyebrow">Training Programs</p>
-            <h1>Competition-Ready<br/><span className="accent">Training Pathways</span></h1>
-            <p className="lede">
-              Specialized programs designed to transform students into competition-ready innovators. From foundational skills to advanced competition strategies.
-            </p>
-            <div className="programs-hero-stats">
-              <div className="stat-item">
-                <div className="stat-number">6+</div>
-                <div className="stat-label">Specialized Programs</div>
-              </div>
-              <div className="stat-item">
-                <div className="stat-number">5000+</div>
-                <div className="stat-label">Students Trained</div>
-              </div>
-              <div className="stat-item">
-                <div className="stat-number">100+</div>
-                <div className="stat-label">Competition Wins</div>
-              </div>
+      <section className="programs-hero" data-section="hero" style={{ paddingLeft: 'clamp(16px, 3vw, 40px)', paddingRight: '0' }}>
+        <div className={`programs-hero-content ${visibleSections.has('hero') ? 'visible' : ''}`} style={{ marginLeft: '0', maxWidth: '100%' }}>
+          <h1>Competition-Ready<br/><span className="accent">Training Pathways</span></h1>
+          <p className="lede">
+            Specialized programs designed to transform students into competition-ready innovators. From foundational skills to advanced competition strategies.
+          </p>
+          <div className="programs-hero-stats">
+            <div className="stat-item">
+              <div className="stat-number">6+</div>
+              <div className="stat-label">Specialized Programs</div>
+            </div>
+            <div className="stat-item">
+              <div className="stat-number">5000+</div>
+              <div className="stat-label">Students Trained</div>
+            </div>
+            <div className="stat-item">
+              <div className="stat-number">100+</div>
+              <div className="stat-label">Competition Wins</div>
             </div>
           </div>
         </div>
@@ -134,7 +131,6 @@ const Programs = () => {
       <section className="programs-grid-section" data-section="programs">
         <div className="wrap">
           <div className={`section-header ${visibleSections.has('programs') ? 'visible' : ''}`}>
-            <p className="eyebrow">Our Programs</p>
             <h2>Choose Your Competition Pathway</h2>
             <p className="lede">Select a program aligned with your interests and competition goals.</p>
           </div>
@@ -182,7 +178,6 @@ const Programs = () => {
         <div className="wrap">
           <div className={`structure-content ${visibleSections.has('structure') ? 'visible' : ''}`}>
             <div className="structure-text">
-              <p className="eyebrow">Program Structure</p>
               <h2>How Our Programs Work</h2>
               <p className="structure-description">
                 Our programs follow a structured approach designed to build comprehensive skills and prepare students for real competition scenarios.
@@ -241,7 +236,6 @@ const Programs = () => {
       <section className="programs-why-section" data-section="why">
         <div className="wrap">
           <div className={`section-header ${visibleSections.has('why') ? 'visible' : ''}`}>
-            <p className="eyebrow">Why Our Programs</p>
             <h2>What Makes Our Training Different</h2>
             <p className="lede">We don't just teach—we prepare students to win.</p>
           </div>
@@ -282,15 +276,22 @@ const Programs = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="programs-cta-section" data-section="cta">
-        <div className="wrap">
-          <div className={`cta-content ${visibleSections.has('cta') ? 'visible' : ''}`}>
-            <h2>Ready to Start Your Training Journey?</h2>
-            <p>Choose a program and begin your path to competition success.</p>
-            <div className="cta-buttons">
-              <Link className="btn" to="/contact">Get Started ↗</Link>
-              <Link className="btn outline" to="/contact">Schedule Consultation</Link>
-            </div>
+      <section className="programs-cta-section" data-section="cta" style={{ paddingLeft: 'clamp(16px, 3vw, 40px)', paddingRight: '0' }}>
+        <div className={`cta-content ${visibleSections.has('cta') ? 'visible' : ''}`} style={{
+          textAlign: 'left',
+          border: '2px solid #0096B9',
+          borderRadius: '12px',
+          padding: 'clamp(24px, 4vw, 40px)',
+          backgroundColor: '#fff',
+          marginLeft: '0',
+          marginRight: 'auto',
+          maxWidth: '100%'
+        }}>
+          <h2>From<br/>Classroom<br/>to<br/>Competition.</h2>
+          <p>Global Robotics Academy prepares students for national and international robotics, STEM, AI, coding, innovation and technology competitions.</p>
+          <div className="cta-buttons" style={{ justifyContent: 'flex-start' }}>
+            <Link className="btn" to="/login">Start Your Competition Journey ↗</Link>
+            <Link className="btn outline" to="/competitions">Explore Competitions</Link>
           </div>
         </div>
       </section>

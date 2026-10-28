@@ -7,7 +7,6 @@ const ContactPage = () => {
     <div className="page">
       <section className="contact-page-header">
         <div className="wrap">
-          <p className="eyebrow">Get in Touch</p>
           <h1>Contact Us</h1>
           <p className="lede">Have questions about our programs? We'd love to hear from you.</p>
         </div>

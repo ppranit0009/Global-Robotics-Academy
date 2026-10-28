@@ -17,7 +17,6 @@ const Footer = () => {
           </div>
         </div>
         <div className="footer-col">
-          <span className="eyebrow" style={{ fontSize: 'var(--font-size-xs)', fontWeight: '700', letterSpacing: '0.1em', textTransform: 'uppercase', color: '#0096B9', display: 'block', marginBottom: '12px' }}>Explore</span>
           <Link to="/about">About</Link>
           <Link to="/competitions">Competitions</Link>
           <Link to="/programs">Programs</Link>
@@ -26,7 +25,6 @@ const Footer = () => {
           <Link to="/partners">Schools &amp; Partners</Link>
         </div>
         <div className="footer-col">
-          <span className="eyebrow" style={{ fontSize: 'var(--font-size-xs)', fontWeight: '700', letterSpacing: '0.1em', textTransform: 'uppercase', color: '#0096B9', display: 'block', marginBottom: '12px' }}>Connect</span>
           <Link to="/gallery">Gallery</Link>
           <Link to="/videos">Videos</Link>
           <Link to="/contact">Contact</Link>

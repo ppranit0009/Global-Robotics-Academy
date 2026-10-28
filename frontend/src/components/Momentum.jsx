@@ -4,7 +4,6 @@ const Momentum = () => {
   return (
     <section className="momentum">
       <div className="wrap momentum-inner">
-        <p className="eyebrow" style={{ fontSize: 'var(--font-size-xs)', fontWeight: '700', letterSpacing: '0.1em', textTransform: 'uppercase', color: '#0096B9' }}>Measured in Momentum</p>
         <h2 style={{ fontSize: 'var(--font-size-4xl)', fontWeight: '800', lineHeight: '1.1', color: '#12181c' }}>Where Students<br/><span className="accent" style={{ color: '#0096B9' }}>Become Competitors.</span></h2>
         <div className="momentum-stats">
           <div><div className="num">5,000+</div><div className="cap">Students Trained</div></div>

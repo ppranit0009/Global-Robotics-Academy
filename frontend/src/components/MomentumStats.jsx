@@ -7,7 +7,7 @@ const MomentumStats = () => {
       className="momentum-stats-section" 
       id="momentum"
       style={{
-        backgroundColor: '#E8F5E9',
+        backgroundColor: '#E3F2FD',
         padding: 'clamp(30px, 5vw, 60px) 0',
         position: 'relative',
         overflow: 'hidden',
@@ -61,17 +61,9 @@ const MomentumStats = () => {
         }}>
           <div style={{ display: 'flex', flexDirection: 'column', height: '100%' }}>
             <div className="momentum-header" style={{ marginBottom: 'clamp(30px, 5vw, 50px)' }}>
-              <p className="eyebrow" style={{ 
-                color: '#0096B9', 
-                fontSize: 'var(--font-size-xs)', 
-                fontWeight: '700', 
-                letterSpacing: '0.15em', 
-                textTransform: 'uppercase', 
-                marginBottom: 'clamp(12px, 2vw, 16px)' 
-              }}>MEASURED IN MOMENTUM</p>
               <h2 style={{ 
                 color: '#12181c', 
-                fontSize: 'var(--font-size-2xl)', 
+                fontSize: 'var(--font-size-4xl)', 
                 fontWeight: '800', 
                 margin: '0', 
                 lineHeight: '1.1',

@@ -31,7 +31,6 @@ const Login = () => {
       <div className="wrap">
         <div className="login-container">
           <div className="login-header">
-            <p className="eyebrow">Welcome Back</p>
             <h1>Start Your <span className="orange">Journey</span></h1>
             <p className="lede">Sign in to access your robotics competition dashboard and track your progress.</p>
           </div>

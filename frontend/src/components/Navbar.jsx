@@ -65,7 +65,6 @@ const Navbar = () => {
           <Link to="/" className={isActive('/') ? 'active' : ''} onClick={closeMobileMenu}>Home</Link>
           <Link to="/about" className={isActive('/about') ? 'active' : ''} onClick={closeMobileMenu}>About</Link>
           <Link to="/programs" className={isActive('/programs') ? 'active' : ''} onClick={closeMobileMenu}>Programs</Link>
-          <Link to="/competitions" className={isActive('/competitions') ? 'active' : ''} onClick={closeMobileMenu}>Competitions</Link>
           <Link to="/teams" className={isActive('/teams') ? 'active' : ''} onClick={closeMobileMenu}>Our Teams</Link>
           <Link to="/impact" className={isActive('/impact') ? 'active' : ''} onClick={closeMobileMenu}>Our Impact</Link>
           <Link to="/contact" className={isActive('/contact') ? 'active' : ''} onClick={closeMobileMenu}>Contact</Link>

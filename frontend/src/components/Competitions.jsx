@@ -63,23 +63,14 @@ const Competitions = ({ showAllCompetitions = false }) => {
   return (
     <section className="competitions" id="competitions" style={{ 
       minHeight: '100vh',
-      maxHeight: '100vh',
       display: 'flex',
       flexDirection: 'column',
       justifyContent: 'center',
       padding: '40px 0'
     }}>
-      <div className="wrap" style={{ height: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
-        <div className="competitions-layout" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 'clamp(30px, 5vw, 60px)', alignItems: 'center' }}>
+      <div className="wrap" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+        <div className="competitions-layout" style={{ display: 'flex', flexDirection: 'column', gap: 'clamp(30px, 5vw, 60px)' }}>
           <div className="competitions-text">
-            <p className="eyebrow" style={{ 
-              color: '#0096B9',
-              fontSize: 'var(--font-size-xs)',
-              fontWeight: '700',
-              letterSpacing: '0.1em',
-              textTransform: 'uppercase',
-              marginBottom: 'clamp(16px, 2vw, 20px)'
-            }}>Competition Directory</p>
             <h2 style={{ 
               color: '#12181c',
               fontSize: 'var(--font-size-4xl)',
@@ -94,8 +85,14 @@ const Competitions = ({ showAllCompetitions = false }) => {
             )}
           </div>
           <div className="competitions-grid">
-            <div className="comp-grid">
-              {competitions.slice(0, showAllCompetitions ? competitions.length : 4).map((competition, index) => (
+            <div className="comp-grid" style={{ 
+              display: 'grid', 
+              gridTemplateColumns: 'repeat(4, 1fr)', 
+              gridAutoFlow: 'row',
+              gap: '24px',
+              width: '100%'
+            }}>
+              {competitions.slice(0, 8).map((competition, index) => (
                 <div className={`comp-card ${visibleCards.has(index) ? 'visible' : ''}`} key={index} data-index={index}>
                   {competition.image && (
                     <img src={competition.image} alt={competition.name} style={{ 
@@ -106,17 +103,10 @@ const Competitions = ({ showAllCompetitions = false }) => {
                       marginBottom: '12px'
                     }} />
                   )}
-                  <h4 style={{ 
-                    color: '#12181c',
-                    fontSize: 'var(--font-size-sm)',
-                    fontWeight: '800',
-                    lineHeight: '1.2',
-                    marginBottom: '8px'
-                  }}>{competition.name}</h4>
                 </div>
               ))}
             </div>
-            {!showAllCompetitions && competitions.length > 4 && (
+            {!showAllCompetitions && competitions.length > 8 && (
               <button className="see-more-btn" onClick={() => navigate('/competitions')}>
                 See More
               </button>

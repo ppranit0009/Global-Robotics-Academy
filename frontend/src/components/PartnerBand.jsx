@@ -49,17 +49,9 @@ const PartnerBand = () => {
       </style>
       <div className="wrap" style={{ padding: 'clamp(30px, 5vw, 60px) clamp(16px, 2.5vw, 20px)' }}>
         <div style={{ textAlign: 'left', marginBottom: 'clamp(30px, 5vw, 50px)' }}>
-          <p className="eyebrow" style={{ 
-            color: '#0096B9',
-            fontSize: 'clamp(12px, 1.5vw, 14px)',
-            fontWeight: '700',
-            letterSpacing: '0.1em',
-            textTransform: 'uppercase',
-            marginBottom: 'clamp(16px, 2vw, 20px)'
-          }}>For Schools &amp; Institutions</p>
           <h2 style={{ 
             color: '#12181c',
-            fontSize: 'clamp(36px, 6vw, 72px)',
+            fontSize: 'var(--font-size-4xl)',
             fontWeight: '800',
             lineHeight: '1.1',
             marginBottom: 'clamp(16px, 2.5vw, 24px)'

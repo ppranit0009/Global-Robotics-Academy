@@ -58,14 +58,6 @@ const Contact = () => {
       <div className="wrap" style={{ height: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
         <div className="contact-form-container">
           <div className="form-header">
-            <p className="form-eyebrow" style={{ 
-              color: '#0096B9',
-              fontSize: 'var(--font-size-xs)',
-              fontWeight: '700',
-              letterSpacing: '0.1em',
-              textTransform: 'uppercase',
-              marginBottom: 'clamp(16px, 2vw, 20px)'
-            }}>01 — 05</p>
             <h2 style={{ 
               color: '#12181c',
               fontSize: 'var(--font-size-4xl)',

@@ -10,12 +10,26 @@ const api = axios.create({
   timeout: 15000, // Further increased timeout to handle slow database connections
 });
 
+// Add auth token to requests for admin operations
+api.interceptors.request.use((config) => {
+  const token = localStorage.getItem('adminToken');
+  if (token) {
+    config.headers.Authorization = `Bearer ${token}`;
+  }
+  return config;
+});
+
 // Add response interceptor for better error handling
 api.interceptors.response.use(
   response => response,
   error => {
     if (error.code === 'ECONNABORTED' || error.code === 'ERR_NETWORK') {
       console.warn('API connection failed - using fallback data');
+    }
+    if (error.response?.status === 401) {
+      localStorage.removeItem('adminToken');
+      localStorage.removeItem('adminUser');
+      window.location.href = '/admin/login';
     }
     return Promise.reject(error);
   }
@@ -71,6 +85,9 @@ export const adminAPI = {
   login: (credentials) => api.post('/admin/login', credentials),
   create: (data) => api.post('/admin', data),
   getAll: () => api.get('/admin'),
+  getById: (id) => api.get(`/admin/${id}`),
+  update: (id, data) => api.put(`/admin/${id}`, data),
+  delete: (id) => api.delete(`/admin/${id}`),
 };
 
 export default api;

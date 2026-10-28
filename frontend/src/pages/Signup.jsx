@@ -38,7 +38,6 @@ const Signup = () => {
       <div className="wrap">
         <div className="login-container">
           <div className="login-header">
-            <p className="eyebrow">Get Started</p>
             <h1>Create Your <span className="orange">Account</span></h1>
             <p className="lede">Join the Global Robotics Academy community and start your robotics journey today.</p>
           </div>

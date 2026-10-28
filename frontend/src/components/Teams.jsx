@@ -194,22 +194,14 @@ const Teams = ({ showAll = false }) => {
     }}>
       <div className="wrap teams-grid" style={{ height: '100%', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 'clamp(30px, 5vw, 60px)', alignItems: 'center' }}>
         <div className="teams-text">
-          <p className="eyebrow" style={{ 
-            color: '#0096B9',
-            fontSize: 'clamp(12px, 1.5vw, 14px)',
-            fontWeight: '700',
-            letterSpacing: '0.1em',
-            textTransform: 'uppercase',
-            marginBottom: 'clamp(16px, 2vw, 20px)'
-          }}>Team Ecosystem</p>
           <h2 style={{ 
             color: '#12181c',
-            fontSize: 'clamp(36px, 6vw, 72px)',
+            fontSize: 'var(--font-size-2xl)',
             fontWeight: '800',
             lineHeight: '1.1',
             marginBottom: 'clamp(16px, 2.5vw, 24px)'
           }}>We Don't<br/>Just Train<br/>Students.<br/><span className="orange" style={{ color: '#0096B9' }}>We Build<br/>Teams.</span></h2>
-          <p className="lede" style={{ fontSize: 'clamp(16px, 2.5vw, 20px)', lineHeight: '1.6', color: '#5a6067' }}>Global Robotics Academy provides the training ecosystem behind student-led robotics teams participating in different technology competitions.</p>
+          <p className="lede" style={{ fontSize: 'var(--font-size-base)', lineHeight: '1.6', color: '#5a6067' }}>Global Robotics Academy provides the training ecosystem behind student-led robotics teams participating in different technology competitions.</p>
           <a className="btn outline" href="#contact">Build Your Team ↗</a>
         </div>
         <div className={`teams-cards-grid ${isTeamsPage ? 'three-columns' : ''}`}>
